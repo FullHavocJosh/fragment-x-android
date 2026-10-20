@@ -6,6 +6,15 @@
 [![Element X Android Matrix room #element-x-android:matrix.org](https://img.shields.io/matrix/element-x-android:matrix.org.svg?label=%23element-x-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-android:matrix.org)
 [![Localazy](https://img.shields.io/endpoint?url=https%3A%2F%2Fconnect.localazy.com%2Fstatus%2Felement%2Fdata%3Fcontent%3Dall%26title%3Dlocalazy%26logo%3Dtrue)](https://localazy.com/p/element)
 
+# Fragment X Android
+
+> **Thought project.** This is a fork of [element-hq/element-x-android](https://github.com/element-hq/element-x-android) used to
+> explore whether a Discord-style Matrix client family (web, Linux and macOS desktop, Android, iOS and iPadOS) built
+> on Element's stack is viable. It is not a released product, it is not affiliated with or endorsed by Element, and
+> nothing here is supported. The tools used to evaluate it are listed at the bottom of this file.
+
+The text below is the upstream Element X Android README.
+
 # Element X Android
 
 Element X Android is the next-generation [Matrix](https://matrix.org/) client provided by [Element](https://element.io/).
@@ -18,15 +27,15 @@ Compared to the previous-generation [Element Classic](https://github.com/element
 
 <!--- TOC -->
 
-* [Screenshots](#screenshots)
-* [Translations](#translations)
-* [Rust SDK](#rust-sdk)
-* [Status](#status)
-* [Minimum SDK version](#minimum-sdk-version)
-* [Contributing](#contributing)
-* [Build instructions](#build-instructions)
-* [Support](#support)
-* [Copyright and License](#copyright-and-license)
+- [Screenshots](#screenshots)
+- [Translations](#translations)
+- [Rust SDK](#rust-sdk)
+- [Status](#status)
+- [Minimum SDK version](#minimum-sdk-version)
+- [Contributing](#contributing)
+- [Build instructions](#build-instructions)
+- [Support](#support)
+- [Copyright and License](#copyright-and-license)
 
 <!--- END -->
 
@@ -48,9 +57,9 @@ And to exit demo mode:
 adb shell am broadcast -a com.android.systemui.demo -e command exit
 -->
 
-|<img src="./docs/images-lfs/screen_1_light.png" width="280" />|<img src="./docs/images-lfs/screen_2_light.png" width="280" />|<img src="./docs/images-lfs/screen_3_light.png" width="280" />|<img src="./docs/images-lfs/screen_4_light.png" width="280" />|
-|-|-|-|-|
-|<img src="./docs/images-lfs/screen_1_dark.png" width="280" />|<img src="./docs/images-lfs/screen_2_dark.png" width="280" />|<img src="./docs/images-lfs/screen_3_dark.png" width="280" />|<img src="./docs/images-lfs/screen_4_dark.png" width="280" />|
+| <img src="./docs/images-lfs/screen_1_light.png" width="280" /> | <img src="./docs/images-lfs/screen_2_light.png" width="280" /> | <img src="./docs/images-lfs/screen_3_light.png" width="280" /> | <img src="./docs/images-lfs/screen_4_light.png" width="280" /> |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="./docs/images-lfs/screen_1_dark.png" width="280" />  | <img src="./docs/images-lfs/screen_2_dark.png" width="280" />  | <img src="./docs/images-lfs/screen_3_dark.png" width="280" />  | <img src="./docs/images-lfs/screen_4_dark.png" width="280" />  |
 
 ## Translations
 
@@ -112,3 +121,21 @@ This software is dual licensed by Element Creations Ltd (Element). It can be use
 (2) under the terms of a paid-for Element Commercial License agreement between you and Element (the terms of which may vary depending on what you and Element have agreed to).
 
 Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licenses for the specific language governing permissions and limitations under the Licenses.
+
+## Automated/AI tools leveraged in these projects:
+
+These tools and models are being used to determine whether this project is viable.
+
+Tools:
+
+- Claude Code
+- `ai`, `aidev` and `ainfo` (local command line front ends that route work to the models below)
+- pi
+- OpenCode
+
+Models:
+
+- Claude (Anthropic): Sonnet and Haiku, plus Claude Sonnet 5.5 in the Claude Code session that created these forks
+- Qwen3.5 9B (local)
+- Qwen3-Coder-30B-A3B-Instruct (local, on device)
+- Big Pickle (OpenCode Zen)
